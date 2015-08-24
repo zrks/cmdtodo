@@ -10,10 +10,7 @@ class BaseController(CementBaseController):
         label = 'base'
         description = "Don't forget important tasks!"
         arguments = [
-            (['-a', '--add'], {'action': 'store', 'help': 'Add task'}),
             (['extra_arguments'], dict(action='store', nargs='*')),
-            (['-d', '--delete'], {'action': 'store', 'help': 'Delete task'}),
-            (['-l', '--list-tasks'], {'action': 'store', 'help': 'List current tasks'})
             ]
 
     @expose(help="Add task")
