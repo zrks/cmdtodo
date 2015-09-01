@@ -2,6 +2,8 @@ from cement.core.foundation import CementApp
 from cement.core.controller import CementBaseController, expose
 from cement.core import handler
 
+import arrow
+
 from db_handler import add_task, list_tasks, delete_task
 
 
@@ -29,7 +31,8 @@ class BaseController(CementBaseController):
     @expose(help="List all tasks")
     def tasks(self):
         for task in list_tasks():
-            print(task.task_name, task.task_description)
+            converted_time = arrow.get(task.created_at)
+            print(task.task_name, task.task_description, converted_time.humanize())
 
 
 class TodoApp(CementApp):

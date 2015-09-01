@@ -1,4 +1,4 @@
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, TIMESTAMP
 from sqlalchemy.orm import sessionmaker
 
 from sql import Task, Base
