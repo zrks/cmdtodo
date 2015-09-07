@@ -5,13 +5,13 @@ Run python sql.py to create db
 
 To add task - run
 ```python
-Python todo.py add "task_name" "task_description"
+python3 todo-cli add "task_name" "task_description"
 ```
 To delete task - run
 ```python
-Python todo.py delete "task_name"
+python3 todo-cli delete "task_name"
 ```
 To list all tasks - run 
 ```python
-Python todo.py tasks
+python3 todo-cli tasks
 ```

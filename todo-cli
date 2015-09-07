@@ -1,3 +1,4 @@
+#!/usr/bin python3.4
 from cement.core.foundation import CementApp
 from cement.core.controller import CementBaseController, expose
 from cement.core import handler
